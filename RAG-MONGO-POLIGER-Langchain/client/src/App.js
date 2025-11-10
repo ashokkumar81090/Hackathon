@@ -288,10 +288,7 @@ const heroContent = {
 function App() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('rag');
   const [drawerOpen, setDrawerOpen] = useState(true);
-  const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
-  });
+  const [darkMode, setDarkMode] = useState(true); // Always default to dark mode
 
   const isMobile = useMediaQuery('(max-width:768px)');
   const theme = createEnterpriseTheme(darkMode ? 'dark' : 'light');
