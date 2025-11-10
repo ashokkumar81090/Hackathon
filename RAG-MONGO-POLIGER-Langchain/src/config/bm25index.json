@@ -1,0 +1,83 @@
+{
+  "mappings": {
+    "dynamic": false,
+    "fields": {
+      "incidentId": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "summary": {
+        "type": "string",
+        "analyzer": "lucene.standard"
+      },
+      "description": {
+        "type": "string",
+        "analyzer": "lucene.standard"
+      },
+      "urgency": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "impact": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "priority": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "status": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "category": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "subcategory": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "assignee": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "reporter": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "team": {
+        "type": "string",
+        "analyzer": "lucene.keyword"
+      },
+      "rootCause": {
+        "type": "string",
+        "analyzer": "lucene.standard"
+      },
+      "resolutionSteps": {
+        "type": "string",
+        "analyzer": "lucene.standard"
+      },
+      "workNotes": {
+        "type": "string",
+        "analyzer": "lucene.standard"
+      },
+      "searchableText": {
+        "type": "string",
+        "analyzer": "lucene.standard"
+      },
+      "createdDate": {
+        "type": "date"
+      },
+      "updatedDate": {
+        "type": "date"
+      },
+      "resolvedDate": {
+        "type": "date"
+      },
+      "closedDate": {
+        "type": "date"
+      }
+    }
+  }
+}

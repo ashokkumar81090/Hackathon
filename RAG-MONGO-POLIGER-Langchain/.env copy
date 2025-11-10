@@ -1,0 +1,55 @@
+#MONGODB_URI="mongodb+srv://aamc94796_db_user:jZZGmhjLzHEBMVse@cluster0.nmldcyy.mongodb.net/?appName=Cluster0"
+MONGODB_URI="mongodb+srv://mohseenphatan_db_user:Lxfnntp5mWwsiPo7@cluster0.vvc0bcr.mongodb.net/?appName=Cluster0"
+#MONGODB_URI="mongodb+srv://aamc94796_db_user:tCFQBbDD80w1t1jc@cluster0.1hgy5pd.mongodb.net/?appName=Cluster0"
+DB_NAME="incidents_db"
+
+INCIDENTS_COLLECTION="incidents"
+INCIDENTS_VECTOR_INDEX_NAME="vector_index_incidents"
+INCIDENTS_BM25_INDEX_NAME="BM25_incidents"
+
+TESTLEAF_API_BASE="https://api.testleaf.com/ai"
+USER_EMAIL="mosin.khan410@gmail.com"
+AUTH_TOKEN=""
+
+OPENAI_API_KEY=""
+
+# Mistral AI
+MISTRAL_API_KEY=6yCOrEQFs7WOEv4zKkPuWmmlAMtbS3Ef
+MISTRAL_EMBEDDING_MODEL=mistral-embed
+
+EMBEDDINGS_PROVIDER=mistral
+
+# Set Groq as the LLM provider
+MODEL_PROVIDER=groq
+
+# Your Groq API Key (REQUIRED)
+GROQ_API_KEY=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
+
+# Groq Model (Optional - defaults to llama-3.3-70b-versatile)
+GROQ_MODEL=llama-3.3-70b-versatile
+
+# LLM Settings (Optional - these are the defaults)
+TEMPERATURE=0.1
+MAX_TOKENS=4096
+
+# ============================================
+# ServiceNow Configuration
+# ============================================
+
+# ServiceNow Instance
+SERVICENOW_INSTANCE_URL=https://dev267228.service-now.com
+SERVICENOW_USERNAME=admin
+SERVICENOW_PASSWORD=
+
+# ServiceNow API Settings
+SERVICENOW_API_VERSION=now/v2
+SERVICENOW_TABLE=incident
+SERVICENOW_FETCH_LIMIT=500
+
+# Authentication
+SERVICENOW_AUTH_TYPE=basic
+
+# Data Generation (using Cursor AI - no API key needed!)
+AI_GENERATION_METHOD=cursor_ai
+AI_GENERATION_COUNT=1500
+TARGET_INCIDENT_COUNT=2000

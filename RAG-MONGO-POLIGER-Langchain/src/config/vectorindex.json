@@ -1,0 +1,50 @@
+{
+  "fields": [
+    {
+      "numDimensions": 1024,
+      "path": "embedding",
+      "similarity": "cosine",
+      "type": "vector"
+    },
+    {
+      "path": "incidentId",
+      "type": "filter"
+    },
+    {
+      "path": "status",
+      "type": "filter"
+    },
+    {
+      "path": "priority",
+      "type": "filter"
+    },
+    {
+      "path": "category",
+      "type": "filter"
+    },
+    {
+      "path": "subcategory",
+      "type": "filter"
+    },
+    {
+      "path": "urgency",
+      "type": "filter"
+    },
+    {
+      "path": "impact",
+      "type": "filter"
+    },
+    {
+      "path": "assignee",
+      "type": "filter"
+    },
+    {
+      "path": "reporter",
+      "type": "filter"
+    },
+    {
+      "path": "team",
+      "type": "filter"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Prevent transition on page load */
+.preload * {
+  transition: none !important;
+}
+
+/* Custom styles for Material-UI components */
+.MuiButton-root {
+  text-transform: none !important;
+  font-weight: 600 !important;
+  box-shadow: 0 14px 30px rgba(79, 70, 229, 0.25) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 36px rgba(79, 70, 229, 0.35) !important;
+}
+
+.MuiButton-contained {
+  background-image: linear-gradient(135deg, #6366f1 0%, #22d3ee 100%) !important;
+}
+
+body[data-theme="light"] .MuiPaper-root {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(248,250,252,0.98) 100%);
+  backdrop-filter: blur(10px);
+}
+
+body[data-theme="dark"] .MuiPaper-root {
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  background-image: linear-gradient(180deg, rgba(24,24,38,0.95) 0%, rgba(16,18,30,0.98) 100%);
+  backdrop-filter: blur(16px);
+}
+
+body[data-theme="dark"] .MuiButton-contained {
+  background-image: linear-gradient(135deg, #4338ca 0%, #0ea5e9 100%) !important;
+  box-shadow: 0 14px 32px rgba(14, 165, 233, 0.35) !important;
+}
+
+.MuiTextField-root {
+  margin-bottom: 0 !important;
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom card hover effects */
+.MuiCard-root {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Accordion styling */
+.MuiAccordion-root {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: none !important;
+}
+
+.MuiAccordion-root:before {
+  display: none;
+}
+
+.MuiAccordion-root.Mui-expanded {
+  margin: 0 !important;
+}
+
+/* Enhanced chip styling */
+.MuiChip-root {
+  font-weight: 500 !important;
+}
+
+/* Better spacing for alerts */
+.MuiAlert-root {
+  border-radius: 8px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  .MuiDrawer-paper {
+    width: 240px !important;
+  }
+}
